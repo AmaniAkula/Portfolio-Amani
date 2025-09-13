@@ -1,0 +1,138 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 20px 170px;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 60px;
+  font-size: 20px;
+}
+
+.nav-connect {
+  font-size: 22px;
+  transition: 0.5s;
+   padding: 25px 45px;
+  border-radius: 50px;
+  background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+  cursor: pointer;
+}
+.nav-connect .anchor-link{
+  text-decoration: none;
+    color: white;
+}
+.nav-connect:hover {
+    transform: scale(1.05);
+    
+}
+.nav-menu li{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+.nav-menu li img{
+  display: flex;
+  margin: auto;
+}
+.nav-menu .anchor-link{
+  text-decoration: none;
+  color: white;
+}
+.nav-menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-menu li {
+  position: relative;
+}
+
+.nav-menu li p {
+  position: relative;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding-bottom: 5px;
+}
+/* wiriting css */
+.nav-menu { list-style: none; display: flex; gap: 28px; margin:0; padding:0; }
+
+.nav-menu .anchor-link {
+  position: relative;
+  display: inline-block;        /* important */
+  padding-bottom: 6px;
+  text-decoration: none;
+  color: inherit;
+}
+
+/* underline uses scaleX for smooth center animation */
+.nav-menu .anchor-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  width: 100%;
+  height: 3px;
+  background: #ff6a00;
+  border-radius: 2px;
+  transition: transform 300ms ease;
+}
+
+/* only selected menu shows the underline */
+.nav-menu .anchor-link.selected_menu::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.nav-mob-close{
+  display: none;
+}
+.nav-mob-open{
+  display: none;
+}
+
+/* mediaQueries */
+@media(max-width:768px) {
+ .nav-connect{
+  display: none;
+}
+.nav-mob-open{
+
+  display: block;
+  position: absolute;
+  right: 30px;
+}
+.nav-mob-close{
+  display: block;
+  position: relative;
+  top: 30px;
+  left: 290px;
+  width: 30px;
+}
+.nav-menu{
+  position: fixed;
+  flex-direction: column;
+  align-items: start;
+  top: 0;
+  gap: 30px;
+  background-color: #1F0016;
+  width: 350px;
+  height: 100%;
+  z-index: 2;
+  transition: right 05s;
+  right: -350px;
+} 
+.nav-menu li{
+  font-size: 30px;
+  padding-left: 100px;
+  flex-direction: row;
+  gap: 20px;
+}
+}
