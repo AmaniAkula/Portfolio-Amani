@@ -15,7 +15,7 @@ const Navbar = () => {
   }
   return (
     <div className='navbar'>
-      <img src={logo} alt="" />
+      <img src={logo} alt="" className='logo' />
        <AiOutlineMenu size={28} onClick={openMenu} className='nav-mob-open' />
       
       <ul ref={menuRef} className="nav-menu">

@@ -1,10 +1,10 @@
 .about {
-    display: flex;
+   display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 80px;
-    margin: 80px 170px;
+    gap: 60px;
+    margin: 70px 10%;
 }
 
 .about-title {
@@ -13,8 +13,9 @@
 
 .about-title h1 {
     padding: 0px 30px;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: 600;
+    
 }
 
 .about-title img {
@@ -26,13 +27,13 @@
 
 .about-sections {
     display: flex;
-    gap: 80px;
+    gap: 60px;
 }
 
 .about-right{
     display: flex;
     flex-direction: column;
-    gap:80px;
+    gap:50px;
 }
 .about-para{
     display: flex;
@@ -54,15 +55,15 @@
     transition: 0.3s;
 }
 .about-skill p{
-    min-width: 150px;
-    font-size: 24px;
+    min-width: 130px;
+    font-size: 20px;
     font-weight: 500;
 }
 .about-skill hr{
     outline: none;
     border: none;
     width: 50%;
-    height: 50%;
+    height: 8px;
     border-radius: 50px;
     background: linear-gradient(266deg,#DF8908 -5.09%,#B415FF 106.28%);
 }
@@ -70,17 +71,17 @@
     display: flex;
     width: 100%;
     justify-content: space-around;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .about-achievement{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    transition: 0.5s;
+   gap: 8px;
+    transition: .5s;
 }
 .about-achievement h1{
-font-size: 60px;
+font-size: 40px;
 font-weight: 700;
 background: linear-gradient(270deg,#DF8908 50.41%,#B415FF 90.25%);
 background-clip: text;
@@ -89,7 +90,7 @@ background-clip: text;
 
 }
 .about-achievement p{
-    font-size: 22px;
+    font-size: 18px;
     font-weight: 500;
 }
 .about-skill:hover{
@@ -154,13 +155,13 @@ img {
 
 @media(max-width:768px) {
     .about{
-        gap: 80px;
-        margin: 50px 70px;
+     gap: 50px;
+        margin: 50px 6%;
         align-items: start;
     }
     .about-title h1{
-        font-size: 50px;
-        padding: 0;
+       padding: 0;
+        font-size: 40px;
     }
     .about-title img{
         width: 130px;
@@ -197,11 +198,11 @@ justify-content: space-between;
 
 }
 .about-achievement h1{
-    font-size: 34px;
+    font-size: 28px;
     font-weight: 700;
 }
 .about-achievement p{
     text-align: center;
-    font-size: 16px;
+    font-size: 12px;
 }
 }
